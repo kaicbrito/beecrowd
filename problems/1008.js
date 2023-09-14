@@ -15,18 +15,18 @@
 
 // Você precisa ler três valores da entrada: o número do funcionário, o número de horas trabalhadas e o valor que o funcionário recebe por hora. 
 // Esses valores são fornecidos como números inteiros e um número com duas casas decimais.
+
 // Cálculo do Salário:
-
 // Para calcular o salário do funcionário, você multiplica o número de horas trabalhadas pelo valor que o funcionário recebe por hora. Isso dará o valor bruto do salário.
+
 // Formatação do Salário:
-
 // Formate o valor do salário com duas casas decimais e adicione o símbolo "$" na frente do valor formatado. Certifique-se de que haja um espaço em branco após o "$".
-// Saída Formatada:
 
+// Saída Formatada:
 // Imprima o número do funcionário seguido de um espaço em branco, um sinal de igual (=), outro espaço em branco e, em seguida, o salário formatado. 
 // O resultado final deve ter a aparência de "Número = $Salário" com duas casas decimais no salário.
-// Exibição do Resultado:
 
+// Exibição do Resultado:
 // Mostre o resultado na saída padrão, que será a resposta ao desafio.
 // Lembre-se de que a formatação é importante neste desafio, e você pode usar funções ou métodos para formatar o valor do salário de acordo com as instruções fornecidas. 
 // Certifique-se de seguir exatamente o formato especificado para a saída.
@@ -36,6 +36,12 @@
 
 export function problem (lines){
 
-
+    let numeroDeFuncionarios = parseInt(lines.shift());
+    let horasTrabalhadas = parseInt(lines.shift());
+    let valorPorHora = parseFloat(lines.shift());
+    let salario;
+    salario = horasTrabalhadas * valorPorHora;
+    console.log(`NUMBER = ${numeroDeFuncionarios}`)
+    console.log(`SALARY = U$ ${salario.toFixed(2)}`)
     
 }
